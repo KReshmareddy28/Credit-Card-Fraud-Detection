@@ -1,0 +1,36 @@
+CREDIT CARD FRAUD DETECTION USING MACHINE LEARNING
+
+1. INTRODUCTION
+Credit card fraud detection is the process of identifying transactions that may be unauthorized. Machine learning can learn patterns from labeled transaction records and flag suspicious transactions for further review.
+
+2. PROBLEM STATEMENT
+Manual review of large numbers of transactions is difficult. This project demonstrates how a supervised classification model can categorize transaction records as legitimate or potentially fraudulent.
+
+3. OBJECTIVES
+- Prepare transaction data for machine learning.
+- Train a Random Forest classifier.
+- Evaluate performance with precision, recall, F1-score, confusion matrix and ROC-AUC.
+- Save a reusable model and result charts.
+
+4. TOOLS AND TECHNOLOGIES
+Programming language: Python
+Libraries: Pandas, scikit-learn, Matplotlib, Joblib
+Environment: Command Prompt or an IDE such as VS Code / PyCharm
+
+5. METHODOLOGY
+The dataset is loaded from CSV. The Class column is the target; all remaining columns are features. The records are divided into training and testing sets using a stratified split. A Random Forest model is trained with class weighting. Predictions are evaluated using classification metrics, and the model and charts are saved.
+
+6. DATASET
+The included 2,000-row dataset is synthetic and created for demonstration. Class 0 represents a legitimate transaction and Class 1 represents a fraudulent transaction. The values do not correspond to real customers or real transactions.
+
+7. RESULTS
+Run `python main.py` to generate the actual results for the included data. Insert the values from `outputs/metrics.json` into the final report rather than claiming a fixed accuracy. The program also creates a confusion matrix and feature-importance chart.
+
+8. CONCLUSION
+This project demonstrates the end-to-end workflow for a machine-learning classification task, including data preparation, model training, evaluation and saving a model. The synthetic dataset makes the project easy to run, but does not establish real-world fraud-detection performance.
+
+9. FUTURE SCOPE
+The project can be extended using an approved real dataset, comparing multiple algorithms, threshold tuning, a secure dashboard and monitoring for changing fraud patterns.
+
+NOTE
+This is an educational prototype only. It is not a banking-grade system and must not be used to approve, reject or block real transactions.
